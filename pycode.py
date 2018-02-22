@@ -26,12 +26,12 @@ while True:
 		inside = people/2;
 		message=str(message)
 		inside=str(inside)
-		response = requests.get('https://api.thingspeak.com/update?api_key=JIK55LIOLVI8JIGX&field2='+message+'&field3='+inside)
+		response = requests.get('https://api.thingspeak.com/update?api_key=APIKEY&field2='+message+'&field3='+inside)
 		html = response.text
 	else:
 		number+=1
 		number=str(number)
-		res = requests.get('https://api.thingspeak.com/update?api_key=JIK55LIOLVI8JIGX&field1='+number)
+		res = requests.get('https://api.thingspeak.com/update?api_key=APIKEY&field1='+number)
 		h = res.text
 	
 	
