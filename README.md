@@ -1,5 +1,5 @@
 # Monitoring System built on Arduino
-A basic tracking/mointoring system built on Arduino Uno R3 board using RFID and IR Sensor. The concept is that the subject(here Cab) is equipped with an RFID chip(RC522) and at certain distance (here shuttle stop) a RFID reader is placed which notes down the time of the passage and records the same.
+A basic tracking/mointoring system built on Arduino Uno R3 board using RFID and IR Sensor. The concept is that the subject (here Cab) is equipped with an RFID chip (RC522) and at certain distance (here shuttle stop) a RFID reader is placed which notes down the time of the passage and records the same.
 Since in this case, a shuttle cab monitoring is taken as task, the number of people travelling has also be noted and for that reason only a People Counter is introduced using IR Sensor, which calculates the number of interrupts and determine the number of people inside the cab. 
 And as the major advantage of implementing an Internet of Things (IoT) system is to analyze the data recorded and store it, for the said purpose, [thingspeak](https://thingspeak.com/) is utilized which can visualize data in terms of plots and graphs.
 
@@ -13,7 +13,5 @@ And as the major advantage of implementing an Internet of Things (IoT) system is
 - rfid-vs-date.png: figure depicts the number of RFID tags scanned over a period of time the increase in the graph is the number of tags scanned. From this graph we can determine that at which time cab is moving more frequently.
 
 ## In order to exceute the code please upload the ino code to Arduino and run the Python code and not the ino code. 
-```
 The code also has the IR sensor part in integrated format, which needs to be deleted if not using People Counter and vice versa.
 You need to create account in Thingspeak and link it your python code by inserting your API key in the place specified.
-```
